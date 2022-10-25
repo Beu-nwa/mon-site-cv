@@ -1,0 +1,136 @@
+:root {
+    
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    background: black;
+    color: white;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+header div {
+    padding: 20px;
+    margin: 0;
+}
+
+.navTitleDiv {
+    display: inline-block;
+    width: 25%;
+}
+
+.navDiv{
+    width: 50%;
+
+}
+
+.navBtnDiv {
+    width: 25%;
+    text-align: end;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.navUl {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    list-style: none;
+    /* width: 50%; */
+    /* align-self: center; */
+    /* flex-direction: row; */
+    /* width: 100%; */
+    /* float: center; */
+    /* display: inline-block; */
+}
+
+.navLi {
+    float: left;
+/* display: inline-block; */
+/* align-self: center; */
+}
+
+.navSwitch {
+    width: 25%;
+    /* float: right; */
+    /* margin-right: 0; */
+}
+
+
+
+
+
+
+
+
+
+/* en dessous: concerne le switch du dark mode */
+
+
+/* From uiverse.io by @alexruix */
+/* The switch - the box around the slider */
+.navSwitch {
+    /* margin-right: 0; */
+    /* align-self: flex-end; */
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.navSwitch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    --background: #28096b;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+    background: var(--background);
+    transition: .5s;
+}
+
+input:checked+.slider {
+    background-color: #3792dd;
+}
+
+input:checked+.slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+}
