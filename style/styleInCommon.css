@@ -8,7 +8,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
     background: var(--darkColor);
-    /* opacity: 0.5; */
     color: var(--whiteColor);
 }
 
@@ -25,8 +24,18 @@ header {
     /* text-align: center; */
 }
 
+/* .headerImg {
+    background: red;
+    width: 1000px;
+} */
+
+.headerImg img {
+    background: red;
+    width: 100vw;
+} 
+
 header div {
-    padding: 20px;
+    padding: 0px 1px;
     margin: 0;
 }
 
@@ -48,6 +57,7 @@ header div {
 h1 {
     padding: 0;
     margin: 0;
+    opacity: 0.5;
 }
 
 .navUl {
@@ -83,15 +93,6 @@ h1 {
     /* color: white; */
     opacity: 1;
     font-size: larger;
-}
-
-.navLi {
-    /* text-align: center; */
-    /* float: left; */
-    /* display: inline-block; */
-    /* padding: 20px; */
-    /* margin: auto; */
-    /* align-self: center; */
 }
 
 .navSwitch {
