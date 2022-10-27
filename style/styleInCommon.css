@@ -7,35 +7,33 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
-    background: var(--darkColor);
     color: var(--whiteColor);
+    background-image: url(../assets/img/bodyBg.jpg);
+    margin: 0;
+    padding: 0;
 }
 
 header {
     display: flex;
     flex-flow: row wrap;
-    background: black;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
 }
-
-/* .headerImg {
-    background: red;
-    width: 1000px;
-} */
 
 .headerImg img {
     background: red;
-    width: 100vw;
+    width: 100%;
+    height: 300px;
+
 } 
 
 header div {
-    padding: 0px 1px;
+    padding: 0px 0px;
     margin: 0;
 }
 
@@ -52,30 +50,24 @@ header div {
 .navBtnDiv {
     width: 25%;
     text-align: end;
+    padding-right: 10px;
 }
 
 h1 {
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 10px;
     opacity: 0.5;
 }
 
 .navUl {
     padding: 0;
-    margin: 0;
+    margin: 15px 0;
     align-items: center;
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 5%;
     text-decoration: none;
-    /* text-align: center; */
-    /* width: 50%; */
-    /* align-self: center; */
-    /* flex-direction: row; */
-    /* width: 100%; */
-    /* float: center; */
-    /* display: inline-block; */
 }
 
 .navLink {
@@ -90,25 +82,19 @@ h1 {
 }
 
 #activeLink {
-    /* color: white; */
     opacity: 1;
     font-size: larger;
 }
 
-.navSwitch {
-    width: 25%;
-    /* float: right; */
-    /* margin-right: 0; */
-}
 
 /* en dessous: concerne le switch du dark mode */
 
-
+.navSwitch {
+    width: 25%;
+}
 /* From uiverse.io by @alexruix */
 /* The switch - the box around the slider */
 .navSwitch {
-    /* margin-right: 0; */
-    /* align-self: flex-end; */
     font-size: 17px;
     position: relative;
     display: inline-block;
@@ -160,11 +146,27 @@ input:checked+.slider:before {
     box-shadow: inset 15px -4px 0px 15px black;
 }
 
+
+
+
+
+/* main */
+main{
+    margin: 10% 0;
+} 
+
+
+
+
+
+
+
+/* footer */
 footer {
-    background: black;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
-    /* text-align: center; */
     height: 50px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
