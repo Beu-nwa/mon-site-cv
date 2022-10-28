@@ -1,6 +1,3 @@
-:root {
-    --bgImgGradientColor: #010101;
-}
 
 .container {
     display: flex;
@@ -18,14 +15,7 @@
 
 
 
-
-
-
-
-
-
-
-
+/* col de gauche */
 
 .leftCol {
     width: 30%;
@@ -51,11 +41,14 @@
 
 .cardOfMyself div {
     opacity: 0;
-    transition: 1s ;
+    transition: 1s;
+    position: relative;
+    top: 100px;
 }
 
 .cardOfMyself:hover div {
     opacity: 0.8;
+    transform: translateY(-100px);
 }
 
 .cardOfMyself ul {
@@ -78,13 +71,15 @@
     padding: 15px 0;
 }
 
-.socialMedia a,.aboutMe a {
+.socialMedia a,
+.aboutMe a {
     color: white;
     opacity: 0.5;
     text-decoration: none;
 }
 
-.socialMedia a:hover,.aboutMe a:hover {
+.socialMedia a:hover,
+.aboutMe a:hover {
     color: unset;
     opacity: 0.8;
 }
@@ -93,16 +88,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
+/* col du milieu */
 
 .centerCol {
     width: 30%;
@@ -123,46 +109,47 @@
     margin: 1%;
 }
 
-#myCvDiv{
+#myCvDiv {
     border: none;
-    text-align: end;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 10px;
 }
 
 
-
-/* btn fichier cv a revoir */
-
-#myCvDiv button{
-    border-radius: 15px;
-    overflow: hidden;
-    color: grey;
+/* Button pour telecharger cv : From uiverse.io by @Voxybuns */
+button {
+    --button_radius: 0.75em;
+    border: none;
+    border-radius: var(--button_radius);
+    background: none;
 }
 
-#myCvDiv button a{
-    border-radius: 15px;
-    overflow: hidden;
-    font-size: larger;
-    color: black;
+.buttonTop {
+    display: block;
+    box-sizing: border-box;
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: white;
+    color: none;
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
 }
 
-#myCvDiv button a:hover{
-    border-radius: 15px;
-    overflow: hidden;
-    color: red;
+button:hover .buttonTop {
+    transform: translateY(-0.33em);
+}
+
+button:active .buttonTop {
+    transform: translateY(0);
 }
 
 
 
 
 
-
-
-
-
-
-
-
+/* col de droite  */
 
 .rightCol {
     width: 40%;
@@ -187,7 +174,6 @@ h4 {
     transform: rotate(180deg);
     margin: 0;
     padding: 0;
-    /* text-orientation: sideways-left; */
 }
 
 .botRow,
@@ -236,6 +222,15 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.firstRow div {
+    text-align: center;
+}
+
+#masteries {
+    cursor: default;
+    font-size: large;
 }
 
 .firstRow h5 {
